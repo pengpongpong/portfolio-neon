@@ -19,7 +19,7 @@ export default function RootLayout({
 
   return (
     <html lang="de">
-      <body className={`py-4 pl-4 flex flex-col min-h-[98vh] justify-center ${inter.className} bg-black`}>
+      <body className={`py-4 pl-4 flex flex-col min-h-[98vh] justify-center ${inter.className} bg-black overflow-hidden`}>
         <Navbar />
         {children}
       </body>

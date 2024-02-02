@@ -1,19 +1,28 @@
 import MainContainer from "@/components/common/MainContainer";
-import Link from "next/link"; 
+import ParticlesCanvas from "@/components/particles/ParticlesCanvas";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <MainContainer className="pb-24 pl-12 left-4">
-      <h1 className="mb-20 text-7xl">Willkommen!</h1>
-      <p className="max-w-4xl text-xl">
-        Webentwickler, der darauf aus ist, Websites zu erstellen, die sowohl
-        schön als auch funktional sind. Egal, ob Sie eine einfache
-        Website oder eine komplexe Webanwendung suchen, ich kann
-        Ihnen dabei helfen, Ihre Ideen zum Leben zu erwecken. Werfen
-        Sie einen Blick auf mein <Link href="/projekte" className="underline text-dark-blue">Portfolio</Link> um einige meiner letzten Arbeiten zu sehen, und
-        zögern Sie nicht, sich bei Interesse an Ihrem Projekt mit
-        mir in <Link href="/kontakt" className="underline text-dark-blue">Verbindung</Link> zu setzen.
-      </p>
+    <MainContainer className="left-4 flex-grow overflow-hidden">
+      <div className="overflow-auto">
+        <div className="min-h-screen">
+          <ParticlesCanvas lang="de" />
+        </div>
+        <div className="p-8 relative min-h-screen">
+          <h1 className="mt-24 mb-12 text-4xl">Some Headline</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+            molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+            numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+            optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
+            obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
+            nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
+            tenetur error, harum nesciunt ipsum debitis quas aliquid. Reprehenderit,
+            quia. Quo neque error repudiandae fuga? Ipsa laudantium molestias eos
+            sapiente officiis modi at sunt excepturi expedita sint? </p>
+        </div>
+      </div>
+
     </MainContainer>
   );
 }
